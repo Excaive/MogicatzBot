@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43b12eba-54e5-461a-be7c-04ae5fe9ef2b" name="Default Changelist" comment="" />
+    <list default="true" id="43b12eba-54e5-461a-be7c-04ae5fe9ef2b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/magicatz_ocr/catpic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/files/magicatz_ocr/catpic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/legacy_meow.py" beforeDir="false" afterPath="$PROJECT_DIR$/temp/legacy_meow.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/info.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
@@ -32,36 +36,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awesome/plugins/replace.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-506">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awesome/plugins/2nd_ridicule.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awesome/plugins/be_ated.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="220">
+              <caret line="61" column="49" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="49" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awesome/plugins/magicatz_ocr/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awesome/plugins/magicatz_ocr/ocr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <element signature="e#89#107#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +71,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awesome/plugins/repeat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="186">
+              <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/awesome/plugins/suffix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -80,18 +93,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temp/test_dict.py">
+        <entry file="file://$PROJECT_DIR$/temp/legacy_meow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
-              <caret line="116" column="41" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="41" />
-              <folding>
-                <element signature="e#807#816#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="538">
+              <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -110,7 +123,6 @@
         <option value="$PROJECT_DIR$/utils/work.py" />
         <option value="$PROJECT_DIR$/utils/info.py" />
         <option value="$PROJECT_DIR$/temp/test_jieba.py" />
-        <option value="$PROJECT_DIR$/temp/legacy_meow.py" />
         <option value="$PROJECT_DIR$/awesome/plugins/creator_commands.py" />
         <option value="$PROJECT_DIR$/awesome/plugins/2nd_ridicule.py" />
         <option value="$PROJECT_DIR$/awesome/plugins/magicatz_ocr.py" />
@@ -119,15 +131,18 @@
         <option value="$PROJECT_DIR$/awesome/plugins/be_ated.py" />
         <option value="$PROJECT_DIR$/awesome/plugins/magicatz_ocr/__init__.py" />
         <option value="$PROJECT_DIR$/awesome/plugins/magicatz_ocr/ocr.py" />
+        <option value="$PROJECT_DIR$/awesome/plugins/meow.py" />
+        <option value="$PROJECT_DIR$/temp/legacy_meow.py" />
+        <option value="$PROJECT_DIR$/awesome/plugins/suffix.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1378" />
+    <option name="height" value="735" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -183,7 +198,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -197,7 +212,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ocr_test">
+  <component name="RunManager" selected="Python.legacy_meow">
     <configuration name="legacy_meow" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MogicatzBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -305,10 +320,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.legacy_meow" />
         <item itemvalue="Python.ocr_test" />
         <item itemvalue="Python.ocr" />
         <item itemvalue="Python.test_dict" />
-        <item itemvalue="Python.legacy_meow" />
         <item itemvalue="Python.test_jieba" />
       </list>
     </recent_temporary>
@@ -327,15 +342,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2487725" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24754098" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -384,13 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/legacy_meow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp/test_jieba.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -399,26 +407,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awesome/plugins/2nd_ridicule.txt" />
-    <entry file="file://$PROJECT_DIR$/awesome/plugins/2nd_ridicule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awesome/plugins/replace.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awesome/plugins/weather/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -437,10 +425,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awesome/plugins/magicatz_ocr/ocr_test.py" />
-    <entry file="file://$PROJECT_DIR$/awesome/plugins/repeat.py">
+    <entry file="file://$PROJECT_DIR$/awesome/plugins/magicatz_ocr/ocr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="1518">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+          <folding>
+            <element signature="e#89#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome/plugins/magicatz_ocr/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-638">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -449,40 +447,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temp/test_dict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
+        <state relative-caret-position="565">
           <caret line="116" column="41" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="41" />
           <folding>
             <element signature="e#807#816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awesome/plugins/be_ated.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awesome/plugins/magicatz_ocr/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awesome/plugins/magicatz_ocr/ocr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="e#89#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -497,10 +465,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/awesome/plugins/repeat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome/plugins/be_ated.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="61" column="49" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/info.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome/plugins/replace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome/plugins/2nd_ridicule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/legacy_meow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome/plugins/suffix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

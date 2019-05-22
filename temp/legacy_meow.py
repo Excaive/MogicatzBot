@@ -25,17 +25,35 @@
 #             return False
 #     return True
 
-import random
+# import random
+#
+# def randomReply():
+#     randomList = \
+#         ['喵？',
+#          '我的主人Excaive最好了。',
+#          '你有小鱼干吗？',
+#          '大中华是什么？好吃吗？',
+#          '好想看你女装呀。',
+#          '你能把我收掉吗？',
+#          '来打ufi吧！要玩的在下面扣个0，我统计一下。']
+#     return random.choice(randomList)
+#
+# print(randomReply())
 
-def randomReply():
-    randomList = \
-        ['喵？',
-         '我的主人Excaive最好了。',
-         '你有小鱼干吗？',
-         '大中华是什么？好吃吗？',
-         '好想看你女装呀。',
-         '你能把我收掉吗？',
-         '来打ufi吧！要玩的在下面扣个0，我统计一下。']
-    return random.choice(randomList)
+msg = '夜轮吹爆bot ‮啊喵‭'
 
-print(randomReply())
+# for i in msg:
+#     print(ord(i))
+
+# print(ord(msg[-1]))
+# print(msg[-1])
+# print(msg[-2])
+# # print(msg.index('蛤'))
+# print(chr(21561))
+
+if chr(8238) and chr(8237) in msg:
+    # a = msg.index(chr(8238))
+    # b = msg.index(chr(8237))
+    suffix = msg[msg.index(chr(8238))+1:msg.index(chr(8237))]
+    suffix = suffix[::-1]
+    print(suffix)
