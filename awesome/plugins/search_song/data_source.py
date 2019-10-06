@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import xlrd
+import re
 
 
 class Song:
@@ -45,6 +46,34 @@ def findSong(songName, songs, max=10):
     sameSongs = []
     for i in range(len(songs)):
         if sameSong(songName, songs[i].name):
+            sameSongs.append(songs[i])
+    if len(sameSongs) != 0:
+        sameSongs = sorted(sameSongs, key=lambda song: song.rank)
+        msg = '找到了以下歌曲：\n'
+        for i in range(min(len(sameSongs), max)):
+            msg = msg + '-------------------------------\n'
+            msg = msg + '曲名：%s\n' % sameSongs[i].name
+            msg = msg + '来源：%s\n' % sameSongs[i].source
+            msg = msg + '排名：%s\n' % int(sameSongs[i].rank)
+        msg = msg + '-------------------------------'
+        return msg
+    else:
+        return '没有找到对应歌曲'
+
+
+def sameSongRe(songName1, songName2):
+    songName1 = r'^%s$' % songName1
+    songMatch = re.match(songName1.upper(), songName2.upper())
+    if songMatch is not None:
+        return True
+    else:
+        return False
+
+
+def findSongRe(songName, songs, max=5):
+    sameSongs = []
+    for i in range(len(songs)):
+        if sameSongRe(songName, songs[i].name):
             sameSongs.append(songs[i])
     if len(sameSongs) != 0:
         sameSongs = sorted(sameSongs, key=lambda song: song.rank)

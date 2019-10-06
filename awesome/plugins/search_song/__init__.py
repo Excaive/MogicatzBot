@@ -36,6 +36,15 @@ async def search_song_group(context):
                 flagLoaded = True
             msgSearch = findSong(msgBlank[1], songs, 10)
             await bot.send(context, msgSearch)
+        elif msgBlank[0].upper() in ['搜歌RE', '找歌RE']:
+            if not flagLoaded:
+                songs = loadSongs()
+                flagLoaded = True
+            msgTran = msgBlank[1]
+            msgTran = msgTran.replace('&#91;', '[')
+            msgTran = msgTran.replace('&#93;', ']')
+            msgSearch = findSongRe(msgTran, songs, 10)
+            await bot.send(context, msgSearch)
 
 
 @bot.on_message('private')
@@ -49,4 +58,13 @@ async def search_song_private(context):
                 songs = loadSongs()
                 flagLoaded = True
             msgSearch = findSong(msgBlank[1], songs, 10)
+            await bot.send(context, msgSearch)
+        elif msgBlank[0].upper() in ['搜歌RE', '找歌RE']:
+            if not flagLoaded:
+                songs = loadSongs()
+                flagLoaded = True
+            msgTran = msgBlank[1]
+            msgTran = msgTran.replace('&#91;', '[')
+            msgTran = msgTran.replace('&#93;', ']')
+            msgSearch = findSongRe(msgTran, songs, 10)
             await bot.send(context, msgSearch)
