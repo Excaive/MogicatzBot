@@ -15,6 +15,7 @@ async def forward(context):
         msgForward = msgForward.replace('/c', at(cat))
         msgForward = msgForward.replace('/e', at(creator))
         msgForward = msgForward.replace('/b', at(beryl))
+        msgForward = msgForward.replace('/k', at(kou))
         msgForward = msgForward.replace('/m', at(marigold))
         msgForward = msgForward.replace('/t', at(tairitsu))
         msgForward = msgForward.replace('//', '/')

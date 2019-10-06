@@ -13,9 +13,12 @@ words = jieba.cut(msg, cut_all=False)
 wordSet = {word for word in words}
 
 msgReply = analysis(wordSet)
+print(wordSet)
 print(msgReply)
 if not msgReply:
     print(2)
+
+##########################################################
 
 # print(wordSet)
 # print(type(wordSet))
