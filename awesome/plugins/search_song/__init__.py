@@ -11,17 +11,19 @@ flagLoaded = False
 @bot.on_message('private')
 async def add_song_private(context):
     global flagLoaded, songs
-    if context['user_id'] == creator and context['message'] == '更新曲库':
+    if context['user_id'] == creator and str(context['message']) == '更新曲库':
         songs = loadSongs()
         flagLoaded = True
+        await bot.send(context, '曲库已经更新了喵~')
 
 
 @bot.on_message('group')
 async def add_song_group(context):
     global flagLoaded, songs
-    if context['user_id'] == creator and context['message'] == '更新曲库':
+    if context['user_id'] == creator and str(context['message']) == '更新曲库':
         songs = loadSongs()
         flagLoaded = True
+        await bot.send(context, '曲库已经更新了喵~')
 
 
 @bot.on_message('group')
