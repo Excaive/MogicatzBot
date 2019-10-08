@@ -8,6 +8,7 @@ bot = nonebot.get_bot()
 songs = []
 flagLoaded = False
 
+
 @bot.on_message('private')
 async def add_song_private(context):
     global flagLoaded, songs
@@ -43,8 +44,7 @@ async def search_song_group(context):
                 songs = loadSongs()
                 flagLoaded = True
             msgTran = msgBlank[1]
-            msgTran = msgTran.replace('&#91;', '[')
-            msgTran = msgTran.replace('&#93;', ']')
+            msgTran = unescape(msgTran)
             msgSearch = findSongRe(msgTran, songs, 10)
             await bot.send(context, msgSearch)
 
@@ -66,7 +66,6 @@ async def search_song_private(context):
                 songs = loadSongs()
                 flagLoaded = True
             msgTran = msgBlank[1]
-            msgTran = msgTran.replace('&#91;', '[')
-            msgTran = msgTran.replace('&#93;', ']')
+            msgTran = unescape(msgTran)
             msgSearch = findSongRe(msgTran, songs, 10)
             await bot.send(context, msgSearch)

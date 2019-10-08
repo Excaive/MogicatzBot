@@ -6,6 +6,13 @@ def at(user_id):
     return '[CQ:at,qq=%d]' % user_id
 
 
+def unescape(string):
+    string = string.replace('&#91;', '[')
+    string = string.replace('&#93;', ']')
+    string = string.replace('&amp;', '&')
+    return string
+
+
 def safe(msg, information):
     banedList = [{'message': r'^给.*(禁言|烟上|上烟|递烟|上大烟|抽大烟|上大中华)$', 'admin': [marigold, tairitsu]},
                  {'message': r'^(认输)$', 'admin': [tairitsu]},
