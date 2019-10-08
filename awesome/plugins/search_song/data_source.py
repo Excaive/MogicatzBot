@@ -11,7 +11,7 @@ class Song:
         self.votes = votes
 
     def info(self):
-        print('【NAME】 %s  【SOURCE】 %s  【RANK】 %d  【VOTES】 %d' %(self.name, self.source, self.rank, self.votes))
+        print('【NAME】 {}  【SOURCE】 {}  【RANK】 {}  【VOTES】 {}'.format(self.name, self.source, self.rank, self.votes))
 
 
 def loadSongs():
@@ -20,12 +20,10 @@ def loadSongs():
     songs = []
     for i in range(sheet.nrows):
         if sheet.cell(i, 0).ctype == 1:
-            newSong = Song(sheet.cell_value(i, 0), sheet.cell_value(i, 1), sheet.cell_value(i, 2),
-                           sheet.cell_value(i, 3))
+            newSong = Song(sheet.cell_value(i, 0), sheet.cell_value(i, 1), int(sheet.cell_value(i, 2)), int(sheet.cell_value(i, 3)))
             songs.append(newSong)
         elif sheet.cell(i, 0).ctype == 2:
-            newSong = Song(str(int(sheet.cell_value(i, 0))), sheet.cell_value(i, 1), sheet.cell_value(i, 2),
-                           sheet.cell_value(i, 3))
+            newSong = Song(str(int(sheet.cell_value(i, 0))), sheet.cell_value(i, 1), int(sheet.cell_value(i, 2)), int(sheet.cell_value(i, 3)))
             songs.append(newSong)
     return songs
 
@@ -51,18 +49,18 @@ def findSong(songName, songs, max=10):
         sameSongs = sorted(sameSongs, key=lambda song: song.rank)
         msg = '找到了以下歌曲：\n'
         for i in range(min(len(sameSongs), max)):
-            msg = msg + '-------------------------------\n'
-            msg = msg + '曲名：%s\n' % sameSongs[i].name
-            msg = msg + '来源：%s\n' % sameSongs[i].source
-            msg = msg + '排名：%s\n' % int(sameSongs[i].rank)
-        msg = msg + '-------------------------------'
+            msg = msg + '------------------------------\n'
+            msg = msg + '曲名：{0.name}\n' \
+                        '来源：{0.source}\n' \
+                        '排名：{0.rank}\n'.format(sameSongs[i])
+        msg = msg + '------------------------------'
         return msg
     else:
         return '没有找到对应歌曲'
 
 
 def sameSongRe(songName1, songName2):
-    songName1 = r'^%s$' % songName1
+    songName1 = r'^{}$'.format(songName1)
     songMatch = re.match(songName1.upper(), songName2.upper())
     if songMatch is not None:
         return True
@@ -79,11 +77,11 @@ def findSongRe(songName, songs, max=5):
         sameSongs = sorted(sameSongs, key=lambda song: song.rank)
         msg = '找到了以下歌曲：\n'
         for i in range(min(len(sameSongs), max)):
-            msg = msg + '-------------------------------\n'
-            msg = msg + '曲名：%s\n' % sameSongs[i].name
-            msg = msg + '来源：%s\n' % sameSongs[i].source
-            msg = msg + '排名：%s\n' % int(sameSongs[i].rank)
-        msg = msg + '-------------------------------'
+            msg = msg + '------------------------------\n'
+            msg = msg + '曲名：{0.name}\n' \
+                        '来源：{0.source}\n' \
+                        '排名：{0.rank}\n'.format(sameSongs[i])
+        msg = msg + '------------------------------'
         return msg
     else:
         return '没有找到对应歌曲'

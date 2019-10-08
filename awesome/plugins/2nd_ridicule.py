@@ -6,6 +6,7 @@ from utils.work import *
 def collect_msg_info(group, msg, sex):
     msgDict[group] = {'msg': msg, 'sex': sex}
 
+
 def ridicule(group, msg):
     if group in msgDict.keys():
         if msgDict[group]['msg'].replace('我', '你') == msg \
