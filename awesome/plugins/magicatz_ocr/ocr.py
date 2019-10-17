@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*
+# -*- coding: utf-8 -*-
 # 通过猫的位置确定屏幕，进行透视变换，然后截取物量和FC/AC标志
 # 训练kNN进行OCR，得出谱面难度等级及是否FC/AC
 
@@ -9,8 +9,8 @@ import cv2 as cv
 
 def recognize():
     MIN_MATCH_COUNT = 150
-    img1 = cv.imread('files\\magicatz_ocr\\_image\\catSE2.jpg',0)           # queryImage
-    img2c = cv.imread('files\\magicatz_ocr\\catpic.jpg',1)                  # trainImage
+    img1 = cv.imread(r'files/magicatz_ocr/_image/catSE2.jpg',0)           # queryImage
+    img2c = cv.imread(r'files/magicatz_ocr/catpic.jpg',1)                  # trainImage
 
     height,width = img2c.shape[:2]
     if max(height, width) > 1000:
@@ -57,13 +57,13 @@ def recognize():
         imgFCAC = img10[336:356, 78:258]
         imgFCAC = cv.adaptiveThreshold(imgFCAC, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 55, 12)
 
-        cv.imwrite('files\\magicatz_ocr\\imgAmount.jpg', imgAmount)
-        cv.imwrite('files\\magicatz_ocr\\imgFCAC.jpg', imgFCAC)
+        cv.imwrite(r'files/magicatz_ocr/imgAmount.jpg', imgAmount)
+        cv.imwrite(r'files/magicatz_ocr/imgFCAC.jpg', imgFCAC)
 
         x = np.array(imgAmount)
         test = x[:, :].reshape(-1, 800).astype(np.float32)
 
-        with np.load('files\\magicatz_ocr\\_data\\amount_data.npz') as data:
+        with np.load(r'files/magicatz_ocr/_data/amount_data.npz') as data:
             train = data['train']
             train_labels = data['train_labels']
 
@@ -76,7 +76,7 @@ def recognize():
         x = np.array(imgFCAC)
         test = x[:, :].reshape(-1, 3600).astype(np.float32)
 
-        with np.load('files\\magicatz_ocr\\_data\\FCAC_data.npz') as data:
+        with np.load(r'files/magicatz_ocr/_data/FCAC_data.npz') as data:
             train = data['train']
             train_labels = data['train_labels']
 

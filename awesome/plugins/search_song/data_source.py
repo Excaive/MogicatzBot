@@ -11,7 +11,7 @@ class Song:
         self.votes = votes
 
     def info(self):
-        print('【NAME】 {}  【SOURCE】 {}  【RANK】 {}  【VOTES】 {}'.format(self.name, self.source, self.rank, self.votes))
+        print(f'【NAME】 {self.name}  【SOURCE】 {self.source}  【RANK】 {self.rank}  【VOTES】 {self.votes}')
 
 
 def loadSongs():
@@ -50,9 +50,9 @@ def findSong(songName, songs, max=10):
         msg = '找到了以下歌曲：\n'
         for i in range(min(len(sameSongs), max)):
             msg = msg + '------------------------------\n'
-            msg = msg + '曲名：{0.name}\n' \
-                        '来源：{0.source}\n' \
-                        '排名：{0.rank}\n'.format(sameSongs[i])
+            msg = msg + f'曲名：{sameSongs[i].name}\n' \
+                        f'来源：{sameSongs[i].source}\n' \
+                        f'排名：{sameSongs[i].rank}\n'
         msg = msg + '------------------------------'
         return msg
     else:
@@ -60,7 +60,7 @@ def findSong(songName, songs, max=10):
 
 
 def sameSongRe(songName1, songName2):
-    songName1 = r'^{}$'.format(songName1)
+    songName1 = rf'^{songName1}$'
     songMatch = re.match(songName1.upper(), songName2.upper())
     if songMatch is not None:
         return True
@@ -78,9 +78,9 @@ def findSongRe(songName, songs, max=5):
         msg = '找到了以下歌曲：\n'
         for i in range(min(len(sameSongs), max)):
             msg = msg + '------------------------------\n'
-            msg = msg + '曲名：{0.name}\n' \
-                        '来源：{0.source}\n' \
-                        '排名：{0.rank}\n'.format(sameSongs[i])
+            msg = msg + f'曲名：{sameSongs[i].name}\n' \
+                        f'来源：{sameSongs[i].source}\n' \
+                        f'排名：{sameSongs[i].rank}\n'
         msg = msg + '------------------------------'
         return msg
     else:

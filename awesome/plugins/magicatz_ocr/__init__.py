@@ -27,7 +27,7 @@ async def magicatz_ocr(context):
     if flagDict[group] > 0:
         searchFile = re.search(r'CQ:image,file=(.*),', msg, re.M)
         searchUrl = re.search(r'url=(.*)]', msg, re.M)
-        fileAddress = '..\\..\\..\\data\\image\\%s.cqimg' % searchFile.group(1)
+        fileAddress = r'../../../data/image/%s.cqimg' % searchFile.group(1)
 
         imgFile = open(fileAddress)
         imgFileContent = imgFile.read()
@@ -39,7 +39,7 @@ async def magicatz_ocr(context):
         imgHeight = int(searchHeight.group(1))
 
         if max(imgWidth, imgHeight) < 5000:
-            urllib.request.urlretrieve(searchUrl.group(1), 'files\\magicatz_ocr\\catpic.jpg')
+            urllib.request.urlretrieve(searchUrl.group(1), r'files/magicatz_ocr/catpic.jpg')
 
         # await bot.send(context, '|test| ' + str(imgWidth)+', '+str(imgHeight))
 
